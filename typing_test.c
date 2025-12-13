@@ -24,10 +24,9 @@ int main() {
     time_t startTime, endTime;
     char choice;
     
-    printf("\n");
-    printf("=====================================\n");
-    printf("   TYPING SPEED TEST APPLICATION\n");
-    printf("=====================================\n\n");
+
+    printf("   Typo Test APPLICATION\n\n");
+  
     
     do {
         // Select a random sentence (or use index based on user choice)
@@ -71,7 +70,7 @@ int main() {
         
         totalChars = strlen(userInput);
         
-        // Calculate WPM (assuming average word length of 5 characters)
+        // Calculate WPM 
         double words = totalChars / 5.0;
         double minutes = timeTaken / 60.0;
         if (minutes > 0) {
